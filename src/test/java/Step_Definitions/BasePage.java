@@ -15,22 +15,22 @@ public class BasePage {
 
     @Given("User navigates to the login page.")
     public void user_navigates_to_the_login_page() {
-        // Setup WebDriverManager
-        WebDriverManager.chromedriver().setup();
-
-        // Configure ChromeOptions if needed
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized"); // Example argument to maximize the window
-
-        // Initialize ChromeDriver
-        driver = new ChromeDriver(options);
-
-        // Set implicit wait and page load timeout
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(200));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-
-        // Open the login page URL (replace with actual URL)
-        driver.get("https://www.google.co.in/");
+//        // Setup WebDriverManager
+//        WebDriverManager.chromedriver().setup();
+//
+//        // Configure ChromeOptions if needed
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--start-maximized"); // Example argument to maximize the window
+//
+//        // Initialize ChromeDriver
+//        driver = new ChromeDriver(options);
+//
+//        // Set implicit wait and page load timeout
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(200));
+//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+//
+//        // Open the login page URL (replace with actual URL)
+//        driver.get("https://www.google.co.in/");
 
         System.out.println("Inside browser open step");
     }
