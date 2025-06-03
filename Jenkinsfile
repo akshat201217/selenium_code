@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'D:\Users\saksh\Downloads\apache-maven-3.9.6-bin' // This must match the Maven name configured in Jenkins (we'll do that)
+        maven 'Maven_3' // This must match the Maven name configured in Jenkins (we'll do that)
     }
 
     stages {
